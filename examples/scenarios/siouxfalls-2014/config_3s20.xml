@@ -17,10 +17,10 @@
 	</module>
 
 	<module name="controller">
-		<param name="writeEventsInterval" value="80" />
-		<param name="writePlansInterval" value="80" />
+		<param name="writeEventsInterval" value="0" />
+		<param name="writePlansInterval" value="0" />
 		<param name="eventsFileFormat" value="xml" />
-		<param name="outputDirectory" value="output/siouxfalls-2014ref"/>
+		<param name="outputDirectory" value="output/siouxfalls-2014"/>
 		<param name="firstIteration" value="0" />
 		<param name="lastIteration" value="80" />
 		<param name="mobsim" value="qsim" />
@@ -31,8 +31,8 @@
 		<param name="endTime" value="30:00:00" />
 		<param name="flowCapacityFactor" value="1.00" />
 		<param name="storageCapacityFactor" value="1.00" />
-		<param name="numberOfThreads" value="1" />
-		<param name = "snapshotperiod"	value = "00:00:01"/>
+		<param name="numberOfThreads" value="2" />
+		<param name = "snapshotperiod"	value = "00:00:00"/>
 
 		<!-- Boolean. `true': stuck vehicles are removed, aborting the plan; `false': stuck vehicles are forced into the next link. `false' is probably the better choice. -->
 		<param name="removeStuckVehicles" value="false" />
